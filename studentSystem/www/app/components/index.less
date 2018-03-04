@@ -1,0 +1,244 @@
+#app{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+
+    .head{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        cursor: pointer;
+    }
+}
+
+.midheader{
+    font-size: 30px;
+    line-height: 300%;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+.personinfo{
+    ul{
+        width: 80%;
+        overflow: hidden;
+        float: left;
+    
+        li{
+            float: left;
+            width: 50%;
+            list-style: none;
+            margin-bottom: 2em; 
+            padding-left: 10px; 
+            border-left: 10px solid #ccc;
+            font-size: 20px;
+    
+            b{
+                margin-right: 10px; 
+            }
+        }
+    }
+
+    .pics{
+        width: 20%;
+        height: 200px;
+        border: 1px solid #ccc;
+        float: right;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.addstudentinfo {
+    .ant-modal-title{
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .ant-input {
+        width: 200px;
+        margin: 0 8px 8px 0;
+    }
+    .ant-radio-group{
+        margin-bottom: 10px;
+    }
+}
+
+.achievement{
+    .selectbox{
+        overflow: hidden;
+        margin-bottom: 20px; 
+        .select{
+            margin-right: 10px;
+            float: left;
+        }
+
+        .addbtn{
+            float: right;
+        }
+        
+    }
+    .editable-row-operations {
+        a {
+            margin-right: 8px;
+        }
+    }
+    
+}
+
+.portrait{
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    // overflow: hidden;
+    .lit_box{
+        position: absolute; 
+        width: 300px;
+        left: 50%; 
+        margin-left: -150px;
+        transition: all 1s ease;
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 20px #444;
+        }
+        p{  
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #ccc;
+            span{
+                display: block;
+                line-height: 30px;
+                font-size: 20px;
+                margin-bottom: 20px; 
+            }
+            .btn{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.cutportrait {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-35%) translateY(-35%);
+}
+.cutarea{
+    width: 1010px;
+    height: 450px;
+    margin: 0 auto;
+    border: 5px double black;
+
+    .left_box{
+        position: relative;
+        float: left;
+        width: 600px;
+        height: 440px;
+
+        .bigImgBound{
+            position: relative;
+            .bigImg{
+                max-width: 600px;
+                max-height: 450px;
+            }
+            .fang{
+                position: absolute;
+                width:100px;
+                height:100px;
+                top:0;
+                left:0;
+                z-index: 999;
+                overflow: hidden;
+    
+                img{
+                    position: relative;
+                }
+            }
+            .mask_cover{
+                position: absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                background-color: rgba(0,0,0,.7);
+            }
+        }
+    }
+    
+    .right_box{
+        position: relative;
+        float: right;
+        width: 400px;
+        height: 440px;
+        border-left: 5px double #444;
+
+        .yulan{
+            width:200px;
+            height: 200px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 50%;
+    
+            img{
+                position: relative;
+            }
+        }
+
+        .btn{
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            left: 50%;
+            margin-left: -40px;
+            bottom: 40px;
+            border-radius: 8px;
+            background: #1890ff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white; 
+            user-select: none;
+            cursor: pointer;
+        }
+    }
+}
+
+// .schedule{
+
+// }
+.login-form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    top: 100px;
+    padding: 20px;
+    background: #ececec;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #eeee;
+
+    .login-form-forgot {
+        float: right;
+    }
+
+    .login-form-button {
+        width: 100%;
+    }
+  }
+ 
